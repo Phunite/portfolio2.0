@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box; 
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: Poppins;
+    font-weight: 400;
+    /* background: url(background-img.jpg); */
+    background: #E7E8E2;
+    text-align: center;
+}
+h1,h2,h3{
+    margin:0;
+    padding:1em 0;
+}
+nav {
+    padding: 8px;
+    min-height: 80px;
+}
+#landing{
+    min-height: 40vh;
+    color:rgba(9, 8, 10, 0.808);
+    font-size: 1.5em;
+
+}
+#landing .bgImage{
+    position:absolute;
+    background-image: url('/img/black-black-and-white-books-6662.jpg');
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    min-height: 40vh;
+    width:100%;
+    z-index: -1;
+    opacity: .7;
+}
+.wrapper{
+    margin:auto;
+    padding:3em 0;
+}
+#btnLanding { 
+color: rgb(0, 0, 0);
+border: 1px solid rgb(10, 143, 238);
+border-radius: 4px;
+padding: 0 15px;
+cursor: pointer;
+height:32px;
+font-size:19px;
+transition: all 0.2s ease-in-out;
+}
+
+#btnLanding:hover { 
+    transform: scale(1.1);
+    }
+#section-A{
+    height:50vh;
+    background:#106f97;
+}
+#section-B{
+    height:50vh;
+    background:#6db685;
+}
+#section-C{
+    height:50vh;
+    background:#c0e4f3;
+}
