@@ -43,6 +43,10 @@ nav ul li a {
       font-weight: 600;
 }
 
+nav ul li:hover{
+      transform: scale(1.5);
+    
+}
 @media screen and (max-width: 864px) {
       .logo {
             padding: 0;
@@ -73,6 +77,7 @@ nav ul li a {
             width: 100%;
             text-align: right;
             margin-bottom: 10px;
+            font-weight:bold;
       }
 
       .nav-wrapper ul li:nth-child(1) a {
