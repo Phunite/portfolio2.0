@@ -20,11 +20,12 @@ body {
     background: #E7E8E2;
     text-align: center;
 }
-h1,h2,h3{
+h1{
     margin:0;
     padding:1em 0;
     color: #ffffff; 
     font-family: 'Lora';
+    font-size: 3em;
     opacity: .8; 
     text-shadow: #222222 1px 1px,#222222 0px 0px,#222222 1px 1px,#222222 2px 2px,#222222 3px 3px,#222222 4px 4px,#222222 5px 5px,#222222 6px 6px,#222222 7px 7px,#222222 8px 8px,#222222 9px 9px,#222222 10px 10px,#222222 11px 11px,#222222 12px 12px,#222222 13px 13px,#222222 14px 14px,#222222 15px 15px,#222222 16px 16px,#222222 17px 17px,#222222 18px 18px,#222222 19px 19px,#222222 20px 20px,#222222 21px 21px,#222222 22px 22px,#222222 23px 23px,#222222 24px 24px,#222222 25px 25px,#222222 26px 26px,#222222 27px 27px,#222222 28px 28px,#222222 29px 29px;
 }
@@ -36,7 +37,7 @@ nav {
     min-height: 40vh;
     color:rgba(9, 8, 10, 0.808);
     font-size: 1.5em;
-
+    max-height:40vh;
 }
 #landing .bgImage{
     position:absolute;
@@ -77,27 +78,29 @@ padding: .375rem .75rem;
     transform: scale(1.1);
     }
 #section-A{
-    height:80vh;
+    height:60vh;
     /* background:#ff7f50; */
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 3fr;
     grid-template-rows: auto;
     width:100%;
 }
 .portImg{
-    background: rgb(107, 101, 101);
-    background-image:url("./img/background-img.jpg");
-    background-position: center;
-    background-repeat:no-repeat;
-    background-size: cover;
+    overflow: hidden;
+    
+}
+.Faceimage{ 
+    width:70%;
+    height:auto;
+
 }
 .portImg2{
-    background: #fd6026;
+    background: #FbFbFb;
 }
 
 #section-B{
     height:50vh;
-    background:#a6ff41;
+    background:#ffffff;
 }
 #section-C{
     height:5vh;
@@ -105,10 +108,34 @@ padding: .375rem .75rem;
 }
 
 @media screen and (max-width: 864px) {
+
+    .wrapper{
+        margin:auto;
+        padding:auto;
+    }
     #section-A{
         /* background:#ff7f50; */
         display:grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     } 
+    #landing{
+        min-height: 40vh;
+        color:rgba(9, 8, 10, 0.808);
+    }
+    h1{
+        margin:0;
+        padding:auto;
+        color: #ffffff; 
+        font-family: 'Lora';
+        font-size: 2em;
+       
+    }
+
+    .Faceimage{ 
+        width:50%;
+        height:auto;
+    
+    }
 }
+
