@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
 * {
     box-sizing: border-box; 
 }
@@ -22,10 +23,11 @@ body {
 }
 h1{
     margin:0;
-    padding:1em 0;
+    padding:35px;
     color: #ffffff; 
-    font-family: 'Lora';
-    font-size: 3em;
+    font-family: 'Orbitron', sans-serif;
+     text-align: center;
+    font-size: 2.75em;
     opacity: .8; 
     text-shadow: #222222 1px 1px,#222222 0px 0px,#222222 1px 1px,#222222 2px 2px,#222222 3px 3px,#222222 4px 4px,#222222 5px 5px,#222222 6px 6px,#222222 7px 7px,#222222 8px 8px,#222222 9px 9px,#222222 10px 10px,#222222 11px 11px,#222222 12px 12px,#222222 13px 13px,#222222 14px 14px,#222222 15px 15px,#222222 16px 16px,#222222 17px 17px,#222222 18px 18px,#222222 19px 19px,#222222 20px 20px,#222222 21px 21px,#222222 22px 22px,#222222 23px 23px,#222222 24px 24px,#222222 25px 25px,#222222 26px 26px,#222222 27px 27px,#222222 28px 28px,#222222 29px 29px;
 }
@@ -36,8 +38,6 @@ nav {
 #landing{
     min-height: 40vh;
     color:rgba(9, 8, 10, 0.808);
-    font-size: 1.5em;
-    max-height:40vh;
 }
 #landing .bgImage{
     position:absolute;
@@ -63,11 +63,10 @@ border-radius: 4px;
 padding: 0 15px;
 cursor: pointer;
 height:32px;
-font-size:19px;
+font-size:15px;
 color:rgb(24, 3, 3);
 font-family: 'Nanum Myeongjo', serif;
 transition: all 0.2s ease-in-out;
-display: inline-block;
 text-align: center;
 background-color: transparent;
 padding: .375rem .75rem;
@@ -78,12 +77,14 @@ padding: .375rem .75rem;
     transform: scale(1.1);
     }
 #section-A{
-    height:60vh;
+    height:auto;
     /* background:#ff7f50; */
     display:grid;
-    grid-template-columns: 2fr 4fr;
+    grid-template-columns: 1.75fr 4fr;
     grid-template-rows: 6fr;
     width:100%;
+    word-wrap: break-word
+
     
 }
 .portImg{
@@ -91,17 +92,43 @@ padding: .375rem .75rem;
     
 }
 .Faceimage{ 
-    width:70%;
+    width:100%;
     height:auto;
+    
 
 }
-.portImg2{
+.aboutme{
     background: #FbFbFb;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    padding:1em;
 }
+[data-typing="fonts"] {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+[data-typing="i"] {
+    font-size: 90px;
+    height: 70px;
+    line-height: 70px;
+  }
+[data-typing="fullstack"] {
+    font-size: 35px;
+    letter-spacing: 1px;
+  }
+
+  [data-typing="developer"] {
+font-size: 50px;
+  background: rgb(2, 2, 2);
+  color: #fff;
+  padding: 0px 4px;
+  }
 
 #section-B{
+    margin:auto;
     height:50vh;
-    background:#ffffff;
+    background:#c54949;
 }
 #section-C{
     height:5vh;
@@ -125,11 +152,12 @@ padding: .375rem .75rem;
         color:rgba(9, 8, 10, 0.808);
     }
     h1{
+
         margin:0;
-        padding:auto;
+        padding:25px;
         color: #ffffff; 
-        font-family: 'Lora';
-        font-size: 2em;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2em;;
        
     }
 
