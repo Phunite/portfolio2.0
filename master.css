@@ -81,12 +81,13 @@ padding: .375rem .75rem;
     height:60vh;
     /* background:#ff7f50; */
     display:grid;
-    grid-template-columns: 1.5fr 3fr;
-    grid-template-rows: auto;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 6fr;
     width:100%;
+    
 }
 .portImg{
-    overflow: hidden;
+    background: #FbFbFb;
     
 }
 .Faceimage{ 
