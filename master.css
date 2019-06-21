@@ -18,7 +18,7 @@ body {
     font-family: 'Orbitron', sans-serif;
     font-weight: 400;
     /* background: url(background-img.jpg); */
-    background: #E7E8E2;
+    background: #FbFbFb;
     text-align: center;
 }
 h1{
@@ -51,6 +51,9 @@ nav {
     opacity: .7;
     
 
+}
+.largerIcon{
+    font-size:80px;
 }
 .wrapper{
     margin:auto;
@@ -105,7 +108,7 @@ padding: .375rem .75rem;
     padding:1em;
 }
 [data-typing="fonts"] {
-    font-size: 15px;
+    font-size: 30px;
     letter-spacing: 1px;
   }
 [data-typing="i"] {
@@ -125,10 +128,16 @@ font-size: 50px;
   padding: 0px 4px;
   }
 
+  .iconGrid{
+      display: grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-gap: 1em;
+  }
+
 #section-B{
     margin:auto;
     height:50vh;
-    background:#c54949;
+    background:#ffffff;
 }
 #section-C{
     height:5vh;
@@ -165,6 +174,15 @@ font-size: 50px;
         width:50%;
         height:auto;
     
+    }
+    .iconGrid{
+        display: grid;
+       grid-template-columns: repeat(3,1fr);
+       grid-gap: 1em;
+       justify-content: center;
+    }
+    .largerIcon{
+        font-size:60px;
     }
 }
 
