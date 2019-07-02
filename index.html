@@ -4,14 +4,15 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
       <title>Phu's Portfolio</title>
       <link rel="stylesheet" href="nav.css">
       <link rel="stylesheet" href="master.css">
       <link rel="stylesheet" href="wordArt.css">
       <script src="script.js"></script>
-      <script src="//daybrush.com/scenejs/release/latest/dist/scene.min.js"></script>
-
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
       <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
       
 </head>
@@ -41,13 +42,15 @@
             <div id="landing">
                   <div class="bgImage"></div>
                   <div class="wrapper">
-                        <h1>Create. Design. Develop.</h1>
-                        <button class="btn" id="btnLanding">View Projects</button>
+                  <h1>Create. Design. Develop.</h1>
+                  <div class="btnwrapper">
+                        <button id="btnLanding">View Projects</button>
                   </div>
+                </div>
             </div>
             <div id="section-A" class="grid">
                   <div class="portImg">
-                        <img class="Faceimage" src="/img/trans-phu.png">
+                        <img class="Faceimage img-responsive" src="/img/trans-phu.png">
                   </div>
                   <div class="aboutme">
                         <p><span data-typing="fullstack"><span data-typing="i">I</span>'m A Full-Stack Web</span> <span
@@ -66,6 +69,7 @@
                                           <div class="devicon-react-plain largerIcon"></div>
                                           <div class="devicon-java-plain largerIcon"></div>
                                           <div class="devicon-mysql-plain largerIcon"></div>
+                                          <div class="devicon-bootstrap-plain largerIcon"></div>
                                        
                               </div>
                                    <!--  Java<i
@@ -219,10 +223,26 @@
                         </div>
                     </div>
             </div>
-            <div id="section-C" class="grid"></div>
-            <div class="footer">
-
+           <footer>
+               <div id="contactIcon">
+                <ul>
+                    <li><a><i class="fas fa-envelope-square iconSize"></i></a></li>
+                    <li><a><i class="fab fa-facebook iconSize" ></i></a></li>
+                    <li><a><i class="fab fa-linkedin iconSize"></i></a></li>
+                    <li><a><i class="fab fa-google-plus-square iconSize"></i></a></li>
+    
+                    
+                </ul>
+               </div>
+               <div class="copyright">
+                   <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ab, quam maiores repellat nemo hic aliquid, officiis quidem corrupti voluptates perspiciatis magni. Est debitis saepe esse numquam aperiam? Maxime, quas?    </div>
+               </div>
+            <div class="form">
+                <div>Contact me:
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati porro eius iste temporibus adipisci, labore illo similique magnam quidem quam quae? Repudiandae repellendus ipsum illum sit est obcaecati eligendi perspiciatis?</p>
+                </div>
             </div>
+           </footer>
       </div>
 
 

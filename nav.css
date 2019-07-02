@@ -44,9 +44,13 @@ nav ul li a {
 }
 
 nav ul li:hover{
-      transform: scale(1.5);
-    
+      transform: scale(1.2); 
 }
+a:hover{
+      text-decoration: none !important;
+      color:rgba(155, 148, 148, 0.452) !important;
+}
+
 @media screen and (max-width: 864px) {
       .logo {
             padding: 0;

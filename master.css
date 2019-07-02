@@ -5,13 +5,16 @@
 * {
     box-sizing: border-box; 
 }
-
 html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: 100vh !important;
 }
+.row {
+    padding-right: 0px;
+    margin-right: 0px;
+  }
 
 body {
     margin: 0;
@@ -23,15 +26,16 @@ body {
     /* background: url(background-img.jpg); */
     background: #FbFbFb;
     text-align: center;
+    overflow-x: hidden; width: 100vw;
 }
 h1{
     margin:0;
     padding:35px;
-    color: #ffffff; 
-    font-family: 'Orbitron', sans-serif;
+    color: #ffffff !important; 
+    font-family: 'Raleway', sans-serif !important;
      text-align: center;
-    font-size: 2.75em;
-    opacity: .8; 
+    font-size: 2.75em !important;
+    opacity: .7; 
     text-shadow: #222222 1px 1px,#222222 0px 0px,#222222 1px 1px,#222222 2px 2px,#222222 3px 3px,#222222 4px 4px,#222222 5px 5px,#222222 6px 6px,#222222 7px 7px,#222222 8px 8px,#222222 9px 9px,#222222 10px 10px,#222222 11px 11px,#222222 12px 12px,#222222 13px 13px,#222222 14px 14px,#222222 15px 15px,#222222 16px 16px,#222222 17px 17px,#222222 18px 18px,#222222 19px 19px,#222222 20px 20px,#222222 21px 21px,#222222 22px 22px,#222222 23px 23px,#222222 24px 24px,#222222 25px 25px,#222222 26px 26px,#222222 27px 27px,#222222 28px 28px,#222222 29px 29px;
 }
 nav {
@@ -58,24 +62,32 @@ nav {
 .largerIcon{
     font-size:80px;
 }
+.btnwrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .wrapper{
-    margin:auto;
-    padding:2em;
+  padding:2em;
+  margin:0;
+  height:    auto !important;      /* These two lines were the key. */
+  min-height: 100%!important;
+   
 }
 #btnLanding { 
-border: 1px solid rgb(0, 0, 0);
-font-weight: bold;
-border-radius: 4px;
-padding: 0 15px;
-cursor: pointer;
-height:32px;
-font-size:15px;
-color:rgb(24, 3, 3);
-font-family: 'Nanum Myeongjo', serif;
-transition: all 0.2s ease-in-out;
-text-align: center;
-background-color: transparent;
-padding: .375rem .75rem;
+    border: 1px solid rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    height:32px;
+    font-size:15px;
+    color:rgb(24, 3, 3);
+    font-family: 'Nanum Myeongjo', serif;
+    transition: all 0.2s ease-in-out;
+    text-align: center !important;
+    background-color: transparent;
+    padding: .375rem .75rem;
   
 }
 
@@ -136,11 +148,10 @@ font-size: 50px;
      grid-template-columns: repeat(4,1fr);
      grid-gap: 1em;
   }
-
+/* Section B ~~~ Portfolio card using isotop extension */
 #section-B{
-    margin:auto;
-    height:50vh;
-    background:#ffffff;
+    height:auto;
+    background:#FbFbFb;
 }
 
 
@@ -270,9 +281,28 @@ height:100%;
 
 
 
+/* Footer section */
+footer{
+    background: rgb(221, 221, 221);
+    margin:auto;
+    height:50vh;
+}
 
+.iconSize{
+    font-size:50px;
+}
 
-
+div#contactIcon  ul >li {
+    box-sizing: border-box;
+    list-style: none;
+    display: inline-block;
+    padding:1em;
+}
+div#contactIcon{
+    text-align: center;
+    padding:1em;
+    box-sizing: border-box;
+}
 
 
 @media screen and (max-width: 864px) {
@@ -281,6 +311,7 @@ height:100%;
         margin:auto;
         padding:auto;
     }
+
     #section-A{
         /* background:#ff7f50; */
         display:grid;
@@ -300,11 +331,11 @@ height:100%;
         font-size: 2em;;
        
     }
-
-    .Faceimage{ 
-        width:50%;
-        height:auto;
-    
+    .Faceimage{
+        width: 50%;
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
     }
     .iconGrid{
         display: grid;
