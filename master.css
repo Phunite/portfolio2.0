@@ -53,7 +53,7 @@ nav {
 }
 #landing .bgImage{
     position: absolute;
-    background-image: url('/img/geometric-1732847_1920.jpg');
+    background-image: url('img/geometric-1732847_1920.jpg');
     background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
@@ -313,7 +313,7 @@ div#contactIcon{
 
 h2{
     text-align: center;
-    
+    padding-to
 }
 
 .copyright{
