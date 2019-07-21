@@ -35,3 +35,8 @@
     });
 
 })(jQuery);
+
+function btnRedirect(){
+    window.location.href="https://github.com/PhuzionMeep?tab=repositories";
+  //alert("hi");
+}

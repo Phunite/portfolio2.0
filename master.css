@@ -23,10 +23,15 @@ body {
     height: 100vh;
     font-family: 'Orbitron', sans-serif;
     font-weight: 400;
-    /* background: url(background-img.jpg); */
     background: #FbFbFb;
     text-align: center;
     overflow-x: hidden; width: 100vw;
+}
+.page_container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 4em;
+    margin-left: 4em;
 }
 h1{
     margin:0;
@@ -34,7 +39,7 @@ h1{
     color: #ffffff !important; 
     font-family: 'Raleway', sans-serif !important;
      text-align: center;
-    font-size: 2.75em !important;
+    font-size: 4em !important;
     opacity: .7; 
     text-shadow: #222222 1px 1px,#222222 0px 0px,#222222 1px 1px,#222222 2px 2px,#222222 3px 3px,#222222 4px 4px,#222222 5px 5px,#222222 6px 6px,#222222 7px 7px,#222222 8px 8px,#222222 9px 9px,#222222 10px 10px,#222222 11px 11px,#222222 12px 12px,#222222 13px 13px,#222222 14px 14px,#222222 15px 15px,#222222 16px 16px,#222222 17px 17px,#222222 18px 18px,#222222 19px 19px,#222222 20px 20px,#222222 21px 21px,#222222 22px 22px,#222222 23px 23px,#222222 24px 24px,#222222 25px 25px,#222222 26px 26px,#222222 27px 27px,#222222 28px 28px,#222222 29px 29px;
 }
@@ -47,8 +52,8 @@ nav {
     color:rgba(9, 8, 10, 0.808);
 }
 #landing .bgImage{
-    position:absolute;
-    background-image: url('/img/black-black-and-white-books-6662.jpg');
+    position: absolute;
+    background-image: url('/img/geometric-1732847_1920.jpg');
     background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
@@ -75,14 +80,14 @@ nav {
    
 }
 #btnLanding { 
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
     font-weight: bold;
     border-radius: 4px;
     padding: 0 15px;
     cursor: pointer;
-    height:32px;
-    font-size:15px;
-    color:rgb(24, 3, 3);
+    height:45px;
+    font-size:18px;
+    color:rgb(255, 255, 255);
     font-family: 'Nanum Myeongjo', serif;
     transition: all 0.2s ease-in-out;
     text-align: center !important;
@@ -106,7 +111,7 @@ nav {
     
 }
 .portImg{
-    background: #FbFbFb;
+    background: #ffce00;
     
 }
 .Faceimage{ 
@@ -116,7 +121,7 @@ nav {
 
 }
 .aboutme{
-    background: #FbFbFb;
+    background: #ffce00;
     height: 100%;
     font-family: 'Raleway', sans-serif;
     text-align: left;
@@ -151,7 +156,7 @@ font-size: 50px;
 /* Section B ~~~ Portfolio card using isotop extension */
 #section-B{
     height:auto;
-    background:#FbFbFb;
+    background:#ffffff;
 }
 
 
@@ -283,15 +288,17 @@ height:100%;
 
 /* Footer section */
 footer{
-    background: rgb(221, 221, 221);
+    background:#A8d0e6;
     margin:auto;
-    height:50vh;
+    height:auto;
 }
 
 .iconSize{
     font-size:50px;
 }
-
+div#contactIcon  ul{
+    padding:0;
+}
 div#contactIcon  ul >li {
     box-sizing: border-box;
     list-style: none;
@@ -299,11 +306,20 @@ div#contactIcon  ul >li {
     padding:1em;
 }
 div#contactIcon{
+    padding:0;
     text-align: center;
-    padding:1em;
-    box-sizing: border-box;
+
 }
 
+h2{
+    text-align: center;
+    
+}
+
+.copyright{
+ padding:1em;
+ font-weight: bolder;
+}
 
 @media screen and (max-width: 864px) {
 
@@ -328,7 +344,7 @@ div#contactIcon{
         padding:25px;
         color: #ffffff; 
         font-family: 'Orbitron', sans-serif;
-        font-size: 2em;;
+        font-size: 3em !important;
        
     }
     .Faceimage{
@@ -345,6 +361,23 @@ div#contactIcon{
     }
     .largerIcon{
         font-size:60px;
+    }
+    .portImg{
+        background: #ffffff;
+        
+    }
+    #landing .bgImage{
+        position: absolute;
+        background-image: url('/img/geometric-1732847_1920.jpg');
+        background-position: center;
+        background-repeat:no-repeat;
+        background-size: cover;
+        min-height: 40vh;
+        width:100%;
+        z-index: -1;
+        opacity: .7;
+        
+    
     }
 }
 
